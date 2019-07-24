@@ -1,5 +1,5 @@
 {
-    "name": "melhorenvio/gerador-cargo",
+    "name": "tessmann/gerador-cargo",
     "description": "Lib para geração de cargos com nomes aleatórios",
     "type": "library",
     "license": "MIT",
