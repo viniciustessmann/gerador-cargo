@@ -5,7 +5,7 @@ namespace Gerador;
 class GeradorCargo
 {
 
-    public static function gerar()
+    public function gerar()
     {
         return $this->getCargo() . $this->getTipo() . $this->getNivel();   
     }
@@ -19,17 +19,17 @@ class GeradorCargo
             'Tester '        
         ];
 
-        return array_rand($cargos, 1);
+        return $cargos[mt_rand(0, count($cargos) - 1)];
     }
 
     private function getTipo()
     {
         $tipos = [
             'Backend ',
-            'Frontend ',
+            'Frontend '
         ];
 
-        return array_rand($tipos, 1);
+        return $tipos[mt_rand(0, count($tipos) - 1)];
     }
 
     private function getNivel()
@@ -41,5 +41,7 @@ class GeradorCargo
             'Junior',
             'jr'
         ];
+
+        return $nivel[mt_rand(0, count($nivel) - 1)];
     }
 }
