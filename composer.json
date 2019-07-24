@@ -1,0 +1,19 @@
+{
+    "name": "melhorenvio/gerador-cargo",
+    "description": "Lib para geração de cargos com nomes aleatórios",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vinícius Tessmann",
+            "email": "vinicius@melhorenvio.com.br"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-0": {
+            "Gerador": "src/"
+        }
+    }
+}
