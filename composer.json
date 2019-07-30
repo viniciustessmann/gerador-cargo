@@ -1,20 +1,39 @@
 {
-    "name": "tessmann/gerador-cargo",
-    "description": "Lib para geração de cargos com nomes aleatórios",
-    "type": "library",
+    "name": "melhorenvio/generator",
+    "keywords": [
+        "melhorenvio",
+        "generator"
+    ],
     "license": "MIT",
+    "type": "library",
     "authors": [
         {
-            "name": "Vinícius Tessmann",
-            "email": "vinicius@melhorenvio.com.br"
+            "name": "Melhor Envio",
+            "email": "dev@melhorenvio.com",
+            "role": "Company"
         }
     ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {},
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
     "autoload": {
-        "psr-0": {
-            "Gerador": "src/"
+        "psr-4": {
+            "Melhorenvio\\Generator\\": "src"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Melhorenvio\\Generator\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
     }
 }
